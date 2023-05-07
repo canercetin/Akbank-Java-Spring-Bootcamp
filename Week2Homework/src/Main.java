@@ -2,7 +2,7 @@ public class Main {
     public static void main(String args[]){
 
         PropertyGetter getter = new PropertyGetter();
-        PropertyService service = new PropertyService();
+        PropertyService service = new PropertyService(getter);
 
         System.out.printf("\n* *PROPERTY GETTER METHODS\n*\n%-10s %s\n%-10s %s\n%-10s %s\n*\n\n","Houses:", getter.getHouses(),
                 "Villas:", getter.getVillas(), "Resorts:", getter.getResorts());

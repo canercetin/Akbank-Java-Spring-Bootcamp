@@ -3,7 +3,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class PropertyService {
-    PropertyGetter propertyGetter = new PropertyGetter();
+    private PropertyGetter propertyGetter;
+    PropertyService(PropertyGetter propertyGetter){
+        this.propertyGetter = propertyGetter;
+    }
 
     /**
     *PRICE METHODS
