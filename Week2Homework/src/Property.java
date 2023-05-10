@@ -1,5 +1,5 @@
 public abstract class Property {
-    String title;
+    private String title;
     private double price;
     private int size;
     private int roomCount;
